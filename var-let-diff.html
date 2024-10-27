@@ -1,0 +1,39 @@
+<script>
+function compareLetVar() {
+  // Using var
+  console.log('Using var:');
+  console.log(a); // Outputs: undefined (due to hoisting)
+  var a = 5;
+  console.log(a); // Outputs: 5
+
+  if (true) {
+      var b = 10; // Function-scoped
+  }
+  console.log(b); // Outputs: 10 (accessible outside the if block)
+
+  // Using let
+  console.log('\nUsing let:');
+  // console.log(c); // ReferenceError: Cannot access 'c' before initialization
+  let c = 15;
+  console.log(c); // Outputs: 15
+
+  if (true) {
+      let d = 20; // Block-scoped
+      console.log(d); // Outputs: 20 (accessible within the block)
+  }
+  // console.log(d); // ReferenceError: d is not defined
+
+  // Re-declaration example
+  var e = 25;
+  var e = 30; // No error
+  console.log(e); // Outputs: 30
+
+  let f = 35;
+  // let f = 40; // SyntaxError: Identifier 'f' has already been declared
+  console.log(f); // Outputs: 35
+}
+
+compareLetVar();
+
+</script>
+
