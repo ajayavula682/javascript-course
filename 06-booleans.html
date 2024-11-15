@@ -10,7 +10,7 @@
 <body>
 
        <script>
-        console.log(typeof true);
+      /*  console.log(typeof true);
         //console.log(sizeof('true'));
         
         console.log(3 < 5);
@@ -22,9 +22,9 @@
 
         console.log(5 ==='5'); 
         //this works fine in js 
-        //following the '!=' is not recomended '!==' is the best way comparing not equals to in the JS
+        //following the '!=' is not recommended '!==' is the best way comparing not equals to in the JS
         console.log(5 !='5');
-        console.log(5 !=='5'); //comperative operators have lower priority in the operations
+        console.log(5 !=='5'); //comparative operators have lower priority in the operations
         const age =15;
         if(false)
        {
@@ -44,7 +44,46 @@
        else{
         console.log('Not Eligible to drive');
         console.log('till your age');
-       }
+       }*/
+
+       /*console.log(true && true); //and operator if two conditions are true the it returns true 
+       console.log(true && false);// here both are not true so it returns false
+
+       console.log( 0.2 >= 0 && 0.2 < 1/3);
+
+       console.log(Math.random());
+
+       console.log(true  ||false);
+
+       console.log(false || true);// or operator in 2 statements if  atleast on is true then it will return true
+       console.log(false || false);
+
+       console.log( !false);
+       console.log( !true); */
+
+       if(5)
+        {
+          console.log('Condition is true');/*truthy value because value inside iff consider as true */
+
+         }
+
+
+         let n;
+
+         if(NaN){console.log("false value");}
+         if(n){console.log("false value");}
+         if(false){console.log("false value");}
+         if(''){console.log("false value");}
+         if(NaN){console.log("false value");}
+         console.log(".");// considered as falsy value
+         //the following are false ,0 ,'',NaN, undefined,null.excluded the above falsy value remaining values are true.
+         //creating truthy and falsy values are to create the shot cut for the execution code.
+         let zero = 0;
+if (!zero) {
+    console.log("Zero is falsy!"); // Might not be what you intended
+}
+
+        
 
 
        </script>
