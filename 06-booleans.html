@@ -77,12 +77,30 @@
          if(NaN){console.log("false value");}
          console.log(".");// considered as falsy value
          //the following are false ,0 ,'',NaN, undefined,null.excluded the above falsy value remaining values are true.
-         //creating truthy and falsy values are to create the shot cut for the execution code.
+         //creating truthy and falsy values are to create the shot cut for the execution code.NaN ie; not a number.
          let zero = 0;
 if (!zero) {
     console.log("Zero is falsy!"); // Might not be what you intended
 }
+  const cQuantity=5;
 
+  if(cQuantity> 0) {
+    console.log("cart is not empty");
+  }
+  if(cQuantity)       //works similar way than the above if statements
+  {
+    console.log("cart is not empty");
+  }
+  else if (cQuantity <1){
+    console.log("cart is empty");
+  }
+  console.log(!0);
+
+  const a='text'/5;
+  console.log(a); //NaN(Not a number)
+   let va;
+   console.log(va); //undefined
+   
         
 
 
