@@ -1,1 +1,1 @@
-All these files have step by step topic wise program files
+All these files have step by step topic for basics of java script
