@@ -2,7 +2,9 @@
 <html lang="en">
 
 <head>
+   <meta charset="UTF-8">
    <title> statements</title> 
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
@@ -15,13 +17,13 @@
   }
   else{'falsy'};
 
-  //gaurd operator ( logical and ie:'&&')
-  //it is called gaurd bcz we write the false statement in the code wer it executes  from left were if the stmt false it won't execute all the statement 
+  //guard operator ( logical and ie:'&&')
+  //it is called guard because we write the false statement in the code where it executes from left, and if the statement is false, it won't execute all the statements 
    false && console.log('hello');
 
 
-    const message =false && 'hello';
-    console.log(message);
+    const message2 =false && 'hello';
+    console.log(message2);
     //shortcut for  let message;
    /* if(Condition)
   {
@@ -33,6 +35,30 @@
   const cur = undefined || 'USD';
   console.log(currency);
   console.log(cur);
+
+  // Improved code for truthy and falsy values
+const truthyValue = true ? 'truthy' : 'falsy';
+console.log(truthyValue);
+
+// Improved shortcut for if statement
+if (true) {
+  console.log('truthy');
+} else {
+  console.log('falsy');
+}
+
+// Improved guard operator (logical and)
+const isFalse = false;
+isFalse && console.log('hello');
+
+const message = false && 'hello';
+console.log(message);
+
+// Improved default operator (logical or)
+const defaultCurrency = 'EUR' || 'USD';
+const undefinedCurrency = undefined || 'USD';
+console.log(defaultCurrency);
+console.log(undefinedCurrency);
 
 
 
