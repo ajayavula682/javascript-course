@@ -4,17 +4,67 @@
     <title>Objects</title>
 </head>
 <body>
-
+<!--<p><div>
+        This is a page for the objects in JS.
+         We are creating a simple object for a product.
+        The object has two properties: name and price.
+        </div></p>-->
+       <!--</div>page for the objects in JS</p>-->
        <script>
-        const product={
+       /* const product={
           name:'socks',
           price:1090
+         // name:'shoes',
+         // price:1200
 
         };
         console.log(product);
-	console.log("how are u");
-    
+	//console.log("how are u");
+       console.log(product.name);
+       console.log(product.price);
 
+
+        product.name ='cotton socks';
+        console.log(product.name);
+        console.log(product);
+
+        product.newProperty = true;
+        console.log(product);
+
+        delete product.newProperty;
+        console.log(product);*/
+
+        const product2={
+              name:'shirt',
+              'delivery-time': '1 day',
+              rating :{
+                     stars:4.5,
+                     count: 97 //nested object  example 
+              },
+              fun: function function1(){
+                     console.log('this is a function');
+                     //console.log(this); // this refers to the object calling the function
+              }
+        };
+        console.log(product2);
+        console.log(product2.name);
+        console.log(product2.name.length);//gives the length of object
+        console.log(product2['name']);// bracket notation similar to dot  -->'.' notation
+        product2['price'] = 1200;//this is mainly used when dot notation properties not worked 
+        //console.log(product2.delivery-time);-->produce errors
+        //08-objects.html:47 Uncaught ReferenceError: time is not defined i.e; delivery-time doesnot exsist in the object 
+        //console.log(product2.delivery-time);
+        console.log(product2['delivery-time']);
+        console.log(product2);
+        console.log(product2.price);
+
+        console.log(product2.rating.count);
+        console.log(product2.rating.stars);//to access values in the nested 
+       //console.log(product2.rating.fun);
+        product2.fun();
+
+        console.log(typeof console);//it says the type of the given parameter..
+        console.log(typeof console.log);
        </script>
 
 
