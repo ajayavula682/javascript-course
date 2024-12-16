@@ -34,6 +34,9 @@
         delete product.newProperty;
         console.log(product);*/
 
+
+
+/*
         const product2={
               name:'shirt',
               'delivery-time': '1 day',
@@ -71,7 +74,43 @@
 
         const jsonString=JSON.stringify(product2);
         const product3=JSON.parse(jsonString);// this function is used to convert JSON file to java script object 
-        console.log(product3);
+        console.log(product3); */
+
+        console.log('hello'.length);
+        console.log('hello'.toUpperCase());
+        console.log('hello'.toLowerCase());
+        console.log('hello'.charAt(0));
+        //console.log(toUpperCase('hello'));
+
+        const object1={
+              message:'hello'
+        };
+        const object2=object1;//copy by reference ie; here while assiging the object 1 value to object 2 not whole object will be dupliciated only the object 1 references will be stored in the obj2;
+        console.log(object1.message);
+        console.log(object2.message);
+       // object2.message='world';
+       //console.log(object1.message);
+
+
+       object1.message ='Good Job!';
+       console.log(object1);
+
+       const object3={
+              message:'hello'
+        };
+        console.log(object1===object3); // false because two objects are not same they have different references
+        console.log(object1===object2); // true because two objects are  same they have different
+        console.log(object1.message === object3.message);
+
+        const object4={
+              message:'hello'
+        };
+        const message =object4.message; //
+         const {message} =object4;//destructing
+
+
+
+
        </script>
 
 
