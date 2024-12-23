@@ -103,10 +103,28 @@
         console.log(object1.message === object3.message);
 
         const object4={
-              message:'hello'
+              message:'Good Job!',
+              price: 799
         };
-        const message =object4.message; //
-         const {message} =object4;//destructing
+       // const message =object4.message; //
+        const { message, price } =object4;//destructing
+        console.log(message);
+        console.log(price);
+
+        const object5 ={
+           // message: message
+            message ,//short hand method here copying all the values in the another object to the new  object which is known as the short hand method
+           // method: function function1(){
+             //     console.log('method');
+            //}
+            method(){
+                  console.log('method');
+            }
+        };
+        console.log(object5);
+        object5.method();
+
+
 
 
 
