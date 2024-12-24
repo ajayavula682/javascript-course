@@ -14,9 +14,16 @@
 <script>
 console.log(
   document.querySelector('button').innerHTML);
+  
   document.querySelector('button').innerHTML ='Changed';
 
   console.log(document.querySelector('.js-button'));
+  //here we have two button to access the second button here we use the class attribute to create the class element and in the query selector we use . and the class attribute name to access the button similar to . selector in the css
+
+  const buttonElement =document.querySelector('.js-button');
+  console.log(buttonElement);
+
+  //DOM combine the Html and Js together.
 
 //console.log(
   //document.querySelector('button').innerHTML);
@@ -30,7 +37,7 @@ console.log(document.body);//this brings the html element into to the document
 //console.log(document.body.innerHTML);//this brings the html element into to the document
 console.log(typeof document.body);
 
-console.log(document.body.innerHTML);//this acces all the elements inside the body element of the html
+console.log(document.body.innerHTML);//this access all the elements inside the body element of the html
 document.body.innerHTML='<button>Good job!</button>';//changed all the elements in to t
 
 //document.body.innerHTML='hello';
