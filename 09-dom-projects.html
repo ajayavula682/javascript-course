@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8">
+    <title>DOM projects</title>
+</head>
+<body>
+
+  <p>YouTube Subscribe Button</p>
+  <button onclick="
+   subscribe();
+  " class ="js-subscribe-button">  Subscribe  </button>
+<script>//here if you have any spaces around subscribe word so we use document.inner.Text instead of the document.innerHTML
+
+  function subscribe()
+{
+  const buttonElement = document.querySelector('.js-subscribe-button');
+
+
+if(buttonElement.innerText === 'Subscribe')//here we used innerHTML but if we have spaces around the subscribe  the innerHTML tag won't work so for that we will use the 'innerText'
+{
+  buttonElement.innerHTML = 'Subscribed';
+}
+else{
+  buttonElement.innerHTML = 'Subscribe';
+}
+}
+
+
+
+
+</script>
+
+
+</body>
+</html>
