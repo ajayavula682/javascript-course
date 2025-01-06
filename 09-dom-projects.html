@@ -9,8 +9,51 @@
   <button onclick="
    subscribe();
   " class ="js-subscribe-button">  Subscribe  </button>
-<script>//here if you have any spaces around subscribe word so we use document.inner.Text instead of the document.innerHTML
+  <!--here if you have any spaces around subscribe word so we use document.inner.Text instead of the document.innerHTML1-->
+  <p>Amazon Shipping Calculator</p>
 
+  <input placeholder="Cost of order" class="js-cost-input" onkeydown=" handleCostKeydown(event);
+  ">
+
+  <button onclick="
+    calculateTotal();
+
+  ">Calculate</button>
+  <p class="js-total-cost"></p>
+
+<script>
+  String(25)
+  console.log('25'-5);//coercion or automatic type convertion as even though the input string is char it still performs the substraction.Still it not recomended as if you see the below example
+  console.log('25'+5);//console.log(event.key);// js have an object called event which have all the info about the key
+
+  console.log(window.document);//similar to document ie it has all the elements in the document
+  window.console.log("hello");//do same as console.log()
+  window.alert
+  
+
+  function handleCostKeydown(event){
+    //console.log(event.key);// js have an object called event which have all the info about the key
+      if(event.key === 'Enter')
+      {
+        calculateTotal();
+      }
+  }
+
+function calculateTotal() {
+  const inputElement = document.querySelector('.js-cost-input');
+  let cost =Number(inputElement.value);//default it will be sting so JS we have  function called Number ()--> by using this we will convert into number
+
+
+  if(cost < 40){
+    cost=cost+10;//here type coversion ie; if input is 25 then the output will be 2510
+
+  }
+
+  document.querySelector('.js-total-cost').innerHTML = `$${cost}`;
+
+
+
+}
   function subscribe()
 {
   const buttonElement = document.querySelector('.js-subscribe-button');
@@ -24,9 +67,6 @@ else{
   buttonElement.innerHTML = 'Subscribe';
 }
 }
-
-
-
 
 </script>
 
