@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8">
+    <title>Advanced-functions</title>
+</head>
+<body>  
+  <script>
+    function greeting()
+    {
+      console.log('hello');
+    }
+    greeting();
+
+    const num = 2;//in JS functions are values we can save it variable.
+    const function1 =function greeting(){
+      console.log('hello2');
+    };
+
+    console.log(function1);
+
+    console.log(typeof(function1));
+    function1();
+
+    const object1 = {
+      num :2,
+      fun :function greeting()// function saved inside the object called method.
+      {
+        console.log('hello3');
+      }
+    };
+    object1.fun();
+
+  </script>
+</body>
+</html>
