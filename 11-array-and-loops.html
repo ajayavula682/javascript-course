@@ -78,12 +78,50 @@
     }
     console.log(numsDoubled);
     */
-   const array1=[1,2,3];
+   /*const array1=[1,2,3];
    const array2=array1;
    array2.push(4);
    console.log(array1);
    console.log(array2); // array2 is a reference to array1
-   //console.log(array1);that means only array two have just the address references of the array 1 not all the values of the array one.
+   //console.log(array1);that means only array two have just the address references of the array 1 not all the values of the array one.*/
+   //array2=array1.slice();
+
+   //const array3=[1,2,3];
+
+   for(let i=1;i<=10;i++)
+   {
+    if(i%3 ===0){
+      //continue;
+      break;
+    }
+    console.log(i);
+   }
+
+   let i=1;
+   while(i<=10)
+   { if(i %3 ===0)
+    {i++;
+      continue;
+   }
+    console.log(i);
+    i++;
+   }
+    
+    function doubledArray(nums)
+    {
+   // const nums =[1,2,3];
+    const numsDoubled = [];
+
+  for(let i=0;i<nums.length;i++)
+  {
+    const num=nums[i];
+    numsDoubled.push(num * 2);
+  }
+  return numsDoubled;
+  }
+  console.log(doubledArray([1,2,3]));
+ console.log(doubledArray([2,4,5]));
+
 
 
 
