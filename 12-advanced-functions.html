@@ -5,6 +5,7 @@
 </head>
 <body>  
   <script>
+    /*
     function greeting()
     {
       console.log('hello');
@@ -29,6 +30,40 @@
       }
     };
     object1.fun();
+
+    function display(param)// it is like passsing value with stating it before were we can pass the varible dynamically.
+    {
+      console.log(param);
+    }
+    display("Hello World");
+
+    function run(param){
+      param();
+    }
+    run(function run(){
+      console.log('Hello4');// functions are values.
+    });// we can also pass function as the parameter.
+      */
+
+       setTimeout(function (){
+        console.log('timeout');
+        console.log('timeout2');
+       }, 3000);//second parametr that allows to call function 
+
+       console.log('next line');
+       //this is known as the Asynchronous code were it won't wait for the line to get executed .
+       //it will execute the next line of code and then execute the function.
+
+       //Were Synchronous code were the -- we will wait for one line to finish before going to the next line.
+
+       setInterval(function(){
+        console.log('setInterval');
+       },3000);
+
+       console.log('nextline 2');
+
+
+
 
   </script>
 </body>
