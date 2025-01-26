@@ -5,6 +5,7 @@
 </head>
 <body>  
   <script>
+    // 1. Function declaration
     /*
     function greeting()
     {
@@ -13,7 +14,8 @@
     greeting();
 
     const num = 2;//in JS functions are values we can save it variable.
-    const function1 =function greeting(){
+    const function1 =function greeting()
+    {
       console.log('hello2');
     };
 
@@ -22,7 +24,8 @@
     console.log(typeof(function1));
     function1();
 
-    const object1 = {
+    const object1 = 
+    {
       num :2,
       fun :function greeting()// function saved inside the object called method.
       {
@@ -44,25 +47,36 @@
       console.log('Hello4');// functions are values.
     });// we can also pass function as the parameter.
       */
+/*
+        setTimeout(function (){
+          console.log('timeout');
+          console.log('timeout2');
+        }, 3000);//second parametr that allows to call function 
 
-       setTimeout(function (){
-        console.log('timeout');
-        console.log('timeout2');
-       }, 3000);//second parametr that allows to call function 
-
-       console.log('next line');
+        console.log('next line');
        //this is known as the Asynchronous code were it won't wait for the line to get executed .
        //it will execute the next line of code and then execute the function.
 
        //Were Synchronous code were the -- we will wait for one line to finish before going to the next line.
 
-       setInterval(function(){
-        console.log('setInterval');
-       },3000);
+        setInterval(function(){
+          console.log('setInterval');
+        },3000);
 
-       console.log('nextline 2');
+        console.log('nextline 2'); */
 
-
+        [
+          'make dinner',
+          'wash dishes',
+          'watch youtube'
+        ].forEach(function(value, index){
+          console.log(index,value);
+        });/*llows to loop through array
+        forEach is a method of array
+        it is a callback function
+        it is a loop
+        it is a function that is passed to another function */
+        
 
 
   </script>
