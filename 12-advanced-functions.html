@@ -4,7 +4,28 @@
     <title>Advanced-functions</title>
 </head>
 <body>  
+  <button onclick="" class="js-button">Click</button>
   <script>
+const buttonElement = document.querySelector(".js-button");
+//.addEventListener()
+//lets us run some code when we interact with the element
+const eventListener =() =>{
+  console.log("click"); };
+
+buttonElement.addEventListener('click',eventListener
+);
+
+buttonElement.removeEventListener('click',eventListener);
+// this .removeEventListener is used to remove the event listener with two parameters and 1-->event 
+//type 2 ie;the function that should be removed.
+
+
+buttonElement.addEventListener('click',() =>{
+  console.log("click2");
+});
+
+//1.click is the type of the event that which we find on the button on the HTML
+//2. function is the function that we want to run when the event happens.
     // 1. Function declaration
     /*
     function greeting()
@@ -69,14 +90,46 @@
           'make dinner',
           'wash dishes',
           'watch youtube'
-        ].forEach(function(value, index){
+        ].forEach((value, index) => {
+          if(value ==='wash dishes'){
+            return;
+          }
+
           console.log(index,value);
         });/*llows to loop through array
         forEach is a method of array
         it is a callback function
         it is a loop
         it is a function that is passed to another function */
+/*
+        const regularFunction = function(param,param2){
+          console.log('regular function'+`${(param+param2)}`);
+        };
+        regularFunction(10,20);
         
+
+        const arrowFunction = ()=>{
+          console.log('arrow function');
+
+        }
+        arrowFunction();
+
+        const oneParam = param =>{
+          console.log(param +1);
+        };
+        oneParam(10);
+
+        const object2 = {
+          method: ()=>{
+
+          },
+          method( ) {
+
+          }
+        }
+        */
+
+
 
 
   </script>
