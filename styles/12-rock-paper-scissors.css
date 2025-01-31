@@ -3,14 +3,16 @@ body {
   color: white;
   font-family: Arial;
 }
+
 .title {
-  font-size:30px;
+  font-size: 30px;
   font-weight: bold;
 }
+
 .move-icon {
   height: 50px;
-  /*background-color: rgb(25, 25, 25); */
 }
+
 .move-button {
   background-color: transparent;
   border: 3px solid white;
@@ -20,20 +22,22 @@ body {
   margin-right: 10px;
   cursor: pointer;
 }
+
 .result {
   font-size: 25px;
   font-weight: bold;
   margin-top: 50px;
 }
+
 .score {
   margin-top: 60px;
 }
-.reset-score-button ,
+
+.reset-score-button,
 .auto-play-button {
   background-color: white;
-  border: none ;
+  border: none;
   font-size: 15px;
-  padding: 18px 15px ;
+  padding: 8px 15px;
   cursor: pointer;
-
 }
