@@ -129,13 +129,31 @@ buttonElement.addEventListener('click',() =>{
         }
         */
 
-        [1,-3,5].filter((value,index) => {
-          return true;
-        }// .filter create a new array 
+        console.log([1,-3,5].filter((value, index) =>
+         {
+          /*
+          if (value >= 0)
+          {
+            return true;
+          }else {
+          return false;
+          }*/
+          return value >=0;
+        }));// .filter create a new array 
         // return true => put value i n array
         // if return false => not put value in array
+        //work same as foreach
+        // but return new array
 
-        );//work same as foreach
+        //map method--> transfrom on array into the another array
+
+        console.log([1,1,3].map((value, index) => {
+          return  value+10;// reurns array by adding 10 to each value of the array.
+
+        }));
+
+        console.log([1,1,3].map(value => value+10)); // does the same thing as above
+
 
 
 
